@@ -1,0 +1,190 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.slider{
+    background-image: url(../images/w1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider .nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.slider .nav .logo{
+    color: white;
+}
+.slider .nav ul{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.slider .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.slider .overlay{
+    background-color: rgba(0,0,0,0.3);
+    padding: 90px;
+}
+.slider .sliderContent{
+    text-align: center;
+    padding: 99px 0;
+    color: white;
+}
+.slider .sliderContent p{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 20px;
+    
+}
+.slider .sliderContent h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.slider .sliderContent button{
+    background-color: darkorange;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    border:none;
+    color: white;
+    cursor:pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+.servicesSection{
+    padding: 90px 0;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    /* border:1px solid red; */
+    margin: 0 auto;
+}
+header{
+    padding-bottom: 50px;
+}
+header h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1.5px rgb(214, 107, 44),3px 3px 5px blue;
+}
+header p{
+    color: dimgray;
+}
+.servicesSection .textBox{
+    width: 33%;
+    display: inline-block;
+    padding: 25px;
+    background-color: rgb(196, 176, 214);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    /* border: 1px solid rgb(218, 30, 30); */
+    -webkit-box-shadow: 1px 1px 8px 1px rgb(196, 189, 189);
+            box-shadow: 1px 1px 8px 1px rgb(196, 189, 189);
+}
+.servicesSection .textBox:hover{
+    transition: all 2s ease-in-out 5s;
+    background-color: blanchedalmond;
+    transform: scale(0.9);
+}
+.servicesSection .textBox:hover span i{
+    /* background-color: blanchedalmond; */
+    transform: rotate(180deg);
+}
+
+.servicesSection .textBox .servicesIcon{
+    display: inline-block;
+    border:1px solid red;
+    height: 70px;
+    width: 70px;
+    background-color:darkorange ;
+    padding: 10px;
+    border-radius: 50%;
+}
+.servicesSection .textBox .servicesIcon i{
+    line-height: 50px;
+    font-size: 40px;
+    color: white;
+}
+.servicesSection .textBox h3{
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.servicesSection .textBox p{
+    color: dimgray;
+    line-height: 25px;
+}
+
+.portfolioSection{
+    padding: 90px 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.portfolioSection .imgBox{
+    width: 29%;
+    display: inline-block;
+    padding: 20px;
+}
+.portfolioSection .imgBox :hover{
+    border: 2px solid red;
+    transform: skewY(10deg);
+}
+.units .unitHeading,.unitPara{
+    /* transform: translateX(90px); */
+    /* transform: translateY(90px); */
+    transform: translate(90px, 50px);
+}
+@media(max-width:1100px){
+    .servicesSection .textBox{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        background-color: brown;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:768px){
+    .slider .nav{
+        /* background-color: red; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider .nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider .nav ul li a{
+        line-height: 30px;
+    }
+    .servicesSection .textBox{
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        background-color: brown;
+        margin-bottom: 30px;
+    }
+}
